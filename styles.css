@@ -61,6 +61,33 @@ a {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button" "navbar navbar navbar";
+  }
+  .logo {
+    order: 0;
+  }
+  .headersignin {
+    order: 1;
+  }
+  .headerNav {
+    order: 2;
+  }
+  .headerNav a {
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2;
+    width: 50%;
+  }
+
+  .headerNav a:hover {
+    border-bottom-color: #0065fc;
+  }
+}
+
+/* HEADER */
+
 /* FOOTER */
 
 .footer {
