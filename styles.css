@@ -1,0 +1,27 @@
+/* FOOTER */
+
+.footer {
+    background-color: #F2F2F2;
+    width: 100%;
+  }
+  .footerWrapper {
+    display: flex;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+  }
+  .footerWrapperColumn {
+    width: 30%;
+    padding: 2rem 2rem;
+  }
+  .footerWrapperColumn a {
+    display: block;
+    margin: 1rem 0;
+  }
+  .footerWrapperColumn h3:hover {
+    text-decoration: underline;
+  }
+
+/* FOOTER */
