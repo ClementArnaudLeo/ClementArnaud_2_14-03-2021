@@ -152,46 +152,82 @@ a {
   font-weight: bold;
 }
 .Popular {
-    display: grid;
+  display: grid;
+  row-gap: 2rem;
+  align-items: start;
+  grid-template-rows: auto repeat(3, 1fr);
+}
+.PopularTitle {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.PopularContentWrapper {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  overflow: auto;
+}
+.PopularContentImageWrapper {
+  position: relative;
+  min-height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+}
+.PopularContentImageWrapperImg {
+  border-radius: 1rem 0 0 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popularContent {
+  display: flex;
+  flex-direction: column;
+}
+.PopularWhitespace {
+  flex: 1;
+}
+.PopularhostingMainCard {
+  height: 8.75rem;
+}
+@media (max-width: 1440px) {
+  .hosting {
+    grid-template-columns: 1fr;
     row-gap: 2rem;
-    align-items: start;
-    grid-template-rows: auto repeat(3, 1fr);
+  }
+  .Popular {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
   }
   .PopularTitle {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
+    grid-column: 1/-1;
   }
-  .PopularContentWrapper {
-    display: flex;
-    align-items: stretch;
-    height: 100%;
-    overflow: auto;
+}
+@media (min-width: 925px) {
+  .hostingMain {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .PopularContentImageWrapper {
-    position: relative;
-    min-height: 100%;
-    width: 33%;
-    min-width: 33%;
-    max-width: 33%;
+}
+@media (max-width: 925px) and (min-width: 650px) {
+  .hostingMain {
+    grid-template-columns: 1fr 1fr;
   }
-  .PopularContentImageWrapperImg {
-    border-radius: 1rem 0 0 1rem;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+@media (max-width: 650px) {
+  .hostingMain {
+    grid-template-columns: 1fr;
   }
-  .popularContent {
-    display: flex;
-    flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .Popular {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
   }
-  .PopularWhitespace {
-    flex: 1;
-  }
-  .PopularhostingMainCard {
-    height: 8.75rem;
-  }
+}
 /* HOSTING */
 
 /* ACTIVITY */
