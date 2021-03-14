@@ -124,6 +124,36 @@ a {
     margin: 1.2rem 1.5rem;
   }
 
+  @media (min-width: 1100px) {
+    .activity {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+    }
+    .activityCard1 {
+      grid-row: 2/7;
+      grid-column: 1/2;
+    }
+    .activityCard2 {
+      grid-column: 2/3;
+      grid-row: 2/5;
+    }
+    .activityCard3 {
+      grid-column: 3/4;
+      grid-row: 2/7;
+    }
+    .activityCard4 {
+      grid-column: 4/5;
+      grid-row: 2/3;
+    }
+    .activityCard5 {
+      grid-column: 2/3;
+      grid-row: 6/7;
+    }
+    .activityCard6 {
+      grid-column: 4/5;
+      grid-row: 4/7;
+    }
+
 /* FOOTER */
 
 .footer {
