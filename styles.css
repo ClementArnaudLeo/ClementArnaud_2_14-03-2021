@@ -88,6 +88,42 @@ a {
 
 /* HEADER */
 
+
+/* ACTIVITY */
+
+.activity {
+    display: grid;
+    column-gap: 2rem;
+    margin: 4rem 0;
+  }
+  .activityTitle {
+    grid-column: 1/-1;
+  }
+  .activityCard {
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.1s;
+  }
+  .activityCard:hover {
+    transform: scale(1.01);
+  }
+  .activitycardImageWrapper {
+    position: relative;
+    flex: 1;
+  }
+  .activitycardImage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .activityCardTitle {
+    margin: 1.2rem 1.5rem;
+  }
+
 /* FOOTER */
 
 .footer {
