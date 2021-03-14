@@ -151,6 +151,47 @@ a {
 .hostingMainViewmore {
   font-weight: bold;
 }
+.Popular {
+    display: grid;
+    row-gap: 2rem;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
+  }
+  .PopularTitle {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .PopularContentWrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+  }
+  .PopularContentImageWrapper {
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+  }
+  .PopularContentImageWrapperImg {
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .popularContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .PopularWhitespace {
+    flex: 1;
+  }
+  .PopularhostingMainCard {
+    height: 8.75rem;
+  }
 /* HOSTING */
 
 /* ACTIVITY */
