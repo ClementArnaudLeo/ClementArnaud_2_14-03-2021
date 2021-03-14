@@ -248,7 +248,7 @@ form {
     display: block;
   }
   .fa-search {
-    display: none;
+    display: none !important;
   }
 }
 .hostingWrapper,
@@ -365,6 +365,7 @@ form {
 .PopularhostingMainCard {
   height: 8.75rem;
 }
+
 @media (max-width: 1440px) {
   .hosting {
     grid-template-columns: 1fr;
@@ -401,6 +402,7 @@ form {
     grid-template-rows: auto repeat(3, 9rem);
   }
 }
+
 /* HOSTING */
 
 /* ACTIVITY */
@@ -516,6 +518,7 @@ form {
 .footerWrapperColumn h3:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 750px) {
   .footerWrapper {
     flex-direction: column;
