@@ -21,9 +21,9 @@ a {
   margin: auto;
 }
 .logo {
-  grid-area: logo;
   padding: 0 2rem;
   height: 2.813rem;
+  grid-area: logo;
 }
 .headerNav {
   display: flex;
@@ -42,13 +42,14 @@ a {
 .headerNav a:hover {
   color: #0065fc;
 }
+
 .headersignin {
   display: flex;
-  align-items: center;
-  grid-area: button;
   padding: 2rem;
   color: #0065fc;
   font-weight: 600;
+  align-items: center;
+  grid-area: button;
 }
 
 @media screen and (min-width: 601px) {
@@ -91,9 +92,9 @@ a {
 /* SEARCH */
 
 main {
-  max-width: 1440px;
   margin: auto;
   padding: 0 2rem;
+  max-width: 1440px;
   box-sizing: border-box;
 }
 
@@ -109,10 +110,10 @@ form {
   overflow: auto;
 }
 .formWrapicon {
-  background-color: #f2f2f2;
-  padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
+  background-color: #f2f2f2;
+  padding: 1rem 1.25rem;
 }
 .fa-map-marker-alt {
   margin-left: 0.1rem;
@@ -143,7 +144,6 @@ form {
   padding: 0 1.5rem;
   font-family: "Raleway", "Sans serif";
   font-size: 1rem;
-  cursor: pointer;
 }
 
 .filters {
@@ -157,15 +157,14 @@ form {
   align-items: center;
 }
 .filterstype {
+  font-weight: bold;
   display: flex;
   align-items: center;
   margin-right: 2rem;
   border: 2px solid #d9d9d9;
   border-radius: 2rem;
   margin-bottom: 1rem;
-  cursor: pointer;
   transition-duration: 0.1s;
-  font-weight: bold;
 }
 .filterstype:last-child {
   margin-right: 0;
@@ -176,8 +175,6 @@ form {
   border: 2px solid #deebff;
 }
 .filterstypeIconWrapper {
-  background-color: #deebff;
-  border-radius: 100%;
   height: 3rem;
   width: 3rem;
   min-height: 3.5rem;
@@ -186,6 +183,8 @@ form {
   align-items: center;
   justify-content: center;
   margin: -2px;
+  background-color: #deebff;
+  border-radius: 100%;
 }
 .fa-money-bill-wave,
 .fa-child,
