@@ -492,13 +492,13 @@ form {
 }
 
 /* ACTIVITY */
-/* footerbottom */
+/* FOOTER */
 
-.footerbottom {
+.footer {
   background-color: #f2f2f2;
   width: 100%;
 }
-.footerbottomWrapper {
+.footerWrapper {
   display: flex;
   max-width: 100%;
   width: 1440px;
@@ -506,40 +506,40 @@ form {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-.footerbottomWrapperColumn {
+.footerWrapperColumn {
   width: 30%;
   padding: 2rem 2rem;
 }
-.footerbottomWrapperColumn a {
+.footerWrapperColumn a {
   display: block;
   margin: 1rem 0;
 }
-.footerbottomWrapperColumn h3:hover {
+.footerWrapperColumn h3:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 750px) {
-  .footerbottomWrapper {
+  .footerWrapper {
     flex-direction: column;
     padding: 2rem;
   }
-  .footerbottomWrapperColumn {
+  .footerWrapperColumn {
     width: 100%;
     padding: 0;
     margin: 1rem 0;
   }
-  .footerbottomWrapperColumn:first-child {
+  .footerWrapperColumn:first-child {
     margin-top: 0;
   }
-  .footerbottomWrapperColumn:last-child {
+  .footerWrapperColumn:last-child {
     margin-bottom: 0;
   }
-  .footerbottomWrapperColumn h3 {
+  .footerWrapperColumn h3 {
     margin: 0;
   }
-  .footerbottomWrapperColumn a:last-child {
+  .footerWrapperColumn a:last-child {
     margin-bottom: 0;
   }
 }
 
-/* footerbottom */
+/* FOOTER */
